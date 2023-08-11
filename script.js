@@ -12,3 +12,12 @@ if (close) {
     nav.classList.remove("active");
   });
 }
+
+var MainImg = document.getElementById("MainImg");
+var smalling = document.getElementsByClassName("small-img");
+
+for (var i = 0; i < smalling.length; i++) {
+  smalling[i].addEventListener("click", function() {
+    MainImg.src = this.src;
+  });
+}
